@@ -58,3 +58,9 @@ TEST(RandoTest, secondIsNotDivisible)
   Rando rando;
  ASSERT_FALSE(rando.isDivisbleBy(3,4));
 }
+
+TEST(RandoTest, divisibleByZero)
+{
+  Rando rando;
+  ASSERT_FALSE((rando.isDivisbleBy(4,0) || rando.isDivisbleBy(0,4)));
+}
