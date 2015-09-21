@@ -28,3 +28,9 @@ TEST(RandoTest, allChildrenSmile)
 	Rando rando;
 	ASSERT_TRUE( rando.shouldWorry(true,true,true) );
 }
+
+TEST(RandoTest, divisibleByItself )
+{
+  Rando rando;
+  ASSERT_TRUE(rando.isDivisbleBy(4,4));
+}
