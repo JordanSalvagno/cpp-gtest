@@ -46,3 +46,15 @@ TEST(RandoTest, secondDivisbleByFirst)
   Rando rando;
   ASSERT_TRUE(rando.isDivisbleBy(2,4));
 }
+
+TEST(RandoTest, firstIsNotDivisible)
+{
+  Rando rando;
+  ASSERT_FALSE(rando.isDivisbleBy(4,3));
+}
+
+TEST(RandoTest, secondIsNotDivisible)
+{
+  Rando rando;
+ ASSERT_FALSE(rando.isDivisbleBy(3,4));
+}
