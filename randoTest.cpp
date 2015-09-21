@@ -40,3 +40,9 @@ TEST(RandoTest, firstDivisibleBySecond)
   Rando rando;
   ASSERT_TRUE(rando.isDivisbleBy(4,2));
 }
+
+TEST(RandoTest, secondDivisbleByFirst)
+{
+  Rando rando;
+  ASSERT_TRUE(rando.isDivisbleBy(2,4));
+}
